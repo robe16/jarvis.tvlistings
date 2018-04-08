@@ -75,6 +75,10 @@ def get_cfg_details():
     return get_config_json()['details']
 
 
+def get_cfg_details_developer_email():
+    return get_cfg_details()['developer_email']
+
+
 def get_cfg_port_broadcast():
     return get_config_json()['port']['broadcast']
 

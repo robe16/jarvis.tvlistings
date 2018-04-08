@@ -3,8 +3,8 @@ import threading
 from bottle import HTTPError
 from bottle import get
 from bottle import request, run, HTTPResponse
-import datetime
 
+from common_functions.urlencode import url_decode
 from common_functions.query_to_string import convert_query_to_string
 from config.config import get_cfg_port_listener
 from config.config import get_cfg_serviceid, get_cfg_name_long, get_cfg_name_short, get_cfg_groups, get_cfg_subservices
@@ -160,7 +160,7 @@ def start_bottle(port_threads):
         #
         try:
             #
-            data = _tvlistings.get_listings_channel(channame)
+            data = _tvlistings.get_listings_channel(url_decode(channame))
             #
             if not bool(data):
                 status = httpStatusFailure
