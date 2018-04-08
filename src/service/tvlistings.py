@@ -56,7 +56,7 @@ class TVlistings():
     def _getlisting(self, chan_name, listing_srcs):
         #
         if not listing_srcs:
-            log_internal(logException,
+            log_internal(logFail,
                          logDesc_retrieve_listing_no_source.format(channel=chan_name),
                          description='-')
             return {}
