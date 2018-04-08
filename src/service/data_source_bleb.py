@@ -5,7 +5,6 @@ import time
 
 from log.log import log_outbound, log_internal
 from resources.global_resources.log_vars import logPass, logFail, logException
-from resources.lang.enGB.logs import *
 from config.config import get_cfg_details_developer_email
 from resources.global_resources.variables import serviceName
 
