@@ -1,0 +1,14 @@
+{
+    "service_id": "tvlistings",
+    "name_long": "TV Listings",
+    "name_short": "TV Listings",
+    "groups": [
+        "Information", "Home Cinema", "Lounge"
+    ],
+    "subservices": [],
+    "details": {},
+    "port": {
+        "broadcast": 1090,
+        "listener": [1091, 1092, 1093, 1094]
+    }
+}
