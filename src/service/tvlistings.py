@@ -33,7 +33,7 @@ class TVlistings():
         #
         for chan_name in channels:
             try:
-                self._listings[chan_name] = self._getlisting(chan_name, channels[chan_name])
+                self._listings[chan_name] = self._getlisting(chan_name)
             except Exception as e:
                 log_internal(logException,
                              logDesc_retrieve_listing.format(channel=chan_name),
@@ -53,7 +53,9 @@ class TVlistings():
 
     # General request code (checks if a listing source is available and then retrieves from relevant scripts)
 
-    def _getlisting(self, chan_name, listing_srcs):
+    def _getlisting(self, chan_name):
+        #
+        listing_srcs = get_channel_item_listingsrc_list(chan_name)
         #
         if not listing_srcs:
             log_internal(logFail,
@@ -62,13 +64,17 @@ class TVlistings():
             return {}
         #
         if len(listing_srcs)>0:
-            for src, code in listing_srcs.items():
+            for src in listing_srcs:
                 try:
+                    #
+                    id = get_channel_item_listingsrc_id(chan_name, src)
+                    offset = get_channel_item_listingsrc_offset(chan_name, src)
+                    #
                     if src == 'bleb':
                         log_internal(logPass,
                                      logDesc_retrieve_listing.format(channel=chan_name),
                                      description=src)
-                        return data_source_bleb.get(code)
+                        return data_source_bleb.get(id, offset)
                 except Exception as e:
                     log_internal(logException,
                                  logDesc_retrieve_listing.format(channel=chan_name),

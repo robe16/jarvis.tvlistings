@@ -9,18 +9,18 @@ from config.config import get_cfg_details_developer_email
 from resources.global_resources.variables import serviceName
 
 
-def get(channel_id):
+def get(channel_id, offset):
     #
     str_listing = getlisting(channel_id, 0)
     xml_listing = ET.fromstring(str_listing)
     #
     if check_enabled(xml_listing):
-        return convert_to_dict(xml_listing)
+        return convert_to_dict(xml_listing, offset)
     else:
         return {}
 
 
-def convert_to_dict(data):
+def convert_to_dict(data, offset):
     json_channel = {}
     #
     lastitem = 'am'
@@ -31,14 +31,14 @@ def convert_to_dict(data):
         #
         d = datetime.strptime(data.attrib['date'], '%d/%m/%Y').date()
         #
-        t_start = datetime.strptime(programme.find('start').text, '%H%M').time()
+        t_start = (datetime.strptime(programme.find('start').text, '%H%M') + timedelta(hours=offset)).time()
         if lastitem == 'pm' and t_start.hour < 12:
             nextday_start = 1
         lastitem = 'am' if t_start.hour < 12 else 'pm'
         d_start = d + timedelta(days=nextday_start)
         start = datetime.combine(d_start, t_start)
         #
-        t_end = datetime.strptime(programme.find('end').text, '%H%M').time()
+        t_end = (datetime.strptime(programme.find('end').text, '%H%M') + timedelta(hours=offset)).time()
         if nextday_start == 1 or t_end.hour < t_start.hour:
             nextday_end = 1
         d_end = d + timedelta(days=nextday_end)
