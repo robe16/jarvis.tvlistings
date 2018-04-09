@@ -522,7 +522,5 @@ channels = {
     "Capital Xtra": {},
     "Radio X": {},
     "Kiss FM": {},
-    "talkSPORT": {
-        "sources": {}
-    }
+    "talkSPORT": {}
 }
