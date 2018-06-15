@@ -9,9 +9,9 @@ from resources.global_resources.log_vars import logPass
 from resources.lang.enGB.logs import *
 from service.tvlistings import TVlistings
 
-from apis.uri_config import get_config
-from apis.uri_get_tvlistings_all import get_tvlistings_all
-from apis.uri_get_tvlistings_channel import get_tvlistings_channel
+from apis.get_config import get_config
+from apis.get_tvlistings_all import get_tvlistings_all
+from apis.get_tvlistings_channel import get_tvlistings_channel
 
 
 def start_bottle(port_threads):
