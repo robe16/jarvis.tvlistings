@@ -1,7 +1,7 @@
-from bottle import get
-from bottle import request, run
+from bottle import request, run, route, get
 
 from config.config import get_cfg_port
+from common_functions.request_enable_cors import response_options
 from log.log import log_internal
 from resources.global_resources.log_vars import logPass
 from resources.lang.enGB.logs import *
@@ -25,6 +25,12 @@ def start_bottle():
     ################################################################################################
     # APIs
     ################################################################################################
+
+    @route('/config', method=['OPTIONS'])
+    @route('/tvlistings/all', method=['OPTIONS'])
+    @route('/tvlistings/channel/<channame>', method=['OPTIONS'])
+    def api_cors_options():
+        return response_options()
 
     @get('/config')
     def api_get_config():
