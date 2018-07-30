@@ -29,20 +29,23 @@ def start_bottle():
     @route('/config', method=['OPTIONS'])
     @route('/tvlistings/all', method=['OPTIONS'])
     @route('/tvlistings/channel/<channame>', method=['OPTIONS'])
-    def api_cors_options():
+    def api_cors_options(**kwargs):
         return response_options()
 
     @get('/config')
     def api_get_config():
-        return get_config(request)
+        response = get_config(request)
+        return response
 
     @get('/tvlistings/all')
     def api_get_tvlistings_all():
-        return get_tvlistings_all(request, _tvlistings)
+        response = get_tvlistings_all(request, _tvlistings)
+        return response
 
     @get('/tvlistings/channel/<channame>')
     def api_get_tvlistings_channel(channame):
-        return get_tvlistings_channel(request, _tvlistings, channame)
+        response = get_tvlistings_channel(request, _tvlistings, channame)
+        return response
 
     ################################################################################################
 
