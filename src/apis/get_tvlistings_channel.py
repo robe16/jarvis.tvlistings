@@ -1,6 +1,5 @@
 from bottle import HTTPResponse, HTTPError
 
-from common_functions.request_enable_cors import enable_cors
 from common_functions.request_log_args import get_request_log_args
 from common_functions.urlencode import url_decode
 from log.log import log_inbound
@@ -29,7 +28,6 @@ def get_tvlistings_channel(request, _tvlistings, channame):
         #
         response = HTTPResponse()
         response.status = status
-        enable_cors(response)
         #
         if not isinstance(data, bool):
             response.body = data
