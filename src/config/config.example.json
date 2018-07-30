@@ -9,8 +9,5 @@
     "details": {
         "developer_email": "example@email_provider.co.uk"
     },
-    "port": {
-        "broadcast": 1090,
-        "listener": [1091, 1092, 1093, 1094]
-    }
+    "port": 1090
 }
