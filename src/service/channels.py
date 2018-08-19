@@ -191,7 +191,7 @@ channels = {"bbc_one": {
                 "hasPlus1": True},
             "nick_junior": {"dataSources": {}},
             "nick_junior_too": {"dataSources": {}},
-            "nick_toons": {"dataSources": {}},
+            "nicktoons": {"dataSources": {}},
             "disney_channel": {
                 "dataSources": {"bleb": {"id": "disney"}},
                 "hasPlus1": True},
