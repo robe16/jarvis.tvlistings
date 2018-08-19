@@ -2,7 +2,8 @@ import threading
 import datetime
 from time import sleep
 
-from service.channel_list import *
+from service.channels import channels
+from service.channel_functions import *
 from service import data_source_bleb
 from log.log import log_internal
 from resources.global_resources.log_vars import logPass, logFail, logException
