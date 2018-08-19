@@ -121,6 +121,7 @@ channels = {"bbc_one": {
             "movies24": {"dataSources": {}, "hasPlus1": True},
             "true_movies": {"dataSources": {}},
             "sony_movie_channel": {"dataSources": {}},
+            "movies4men": {"dataSources": {}},
             "film4": {
                 "dataSources": {"bleb": {"id": "film_four"}},
                 "hasPlus1": True},
