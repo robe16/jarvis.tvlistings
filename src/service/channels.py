@@ -217,7 +217,6 @@ channels = {"bbc_one": {
             "box_upfront": {"dataSources": {}},
             "magic": {"dataSources": {}},
             "kerrang_tv": {"dataSources": {}},
-            "vintage_tv": {"dataSources": {}},
             "clubland": {"dataSources": {}},
             "bbc_news": {
                 "dataSources": {"bleb": {"id": "bbc_news24"}}},
