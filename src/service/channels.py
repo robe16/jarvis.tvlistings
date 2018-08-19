@@ -1,257 +1,259 @@
-channels = {"BBC ONE": {
+channels = {"bbc_one": {
                 "dataSources": {"bleb": {"id": "bbc1"}}},
-            "BBC TWO": {
+            "bbc_two": {
                 "dataSources": {"bleb": {"id": "bbc2"}}},
-            "ITV": {
+            "itv": {
                 "dataSources": {"bleb": {"id": "p_itv1"}},
                 "hasPlus1": True},
-            "Channel 4": {
+            "channel_4": {
                 "dataSources": {"bleb": {"id": "ch4"}},
                 "hasPlus1": True},
-            "Channel 5": {
+            "five": {
                 "dataSources": {"bleb": {"id": "five"}},
                 "hasPlus1": True},
-            "My5": {"dataSources": {}},
-            "BBC FOUR":  {
+            "my5": {"dataSources": {}},
+            "bbc_four":  {
                 "dataSources": {"bleb": {"id": "bbc4"}}},
-            "Sky1":  {
+            "sky1":  {
                 "dataSources": {"bleb": {"id": "sky_one"}}},
-            "Sky2": {
+            "sky2": {
                 "dataSources": {"bleb": {"id": "sky_two"}}},
-            "Sky Living": {
+            "sky_witness": {
                 "dataSources": {"bleb": {"id": "living_tv"}},
                 "hasPlus1": True},
-            "ITV2": {
+            "itv2": {
                 "dataSources": {"bleb": {"id": "p_itv2"}},
                 "hasPlus1": True},
-            "ITV3": {
+            "itv3": {
                 "dataSources": {"bleb": {"id": "p_itv3"}},
                 "hasPlus1": True},
-            "ITV4": {
+            "itv4": {
                 "dataSources": {"bleb": {"id": "p_itv4"}},
                 "hasPlus1": True},
-            "ITVBe": {"dataSources": {}, "hasPlus1": True},
-            "Sky Arts": {"dataSources": {}},
-            "Pick": {"dataSources": {}},
-            "W": {
+            "itvbe": {"dataSources": {}, "hasPlus1": True},
+            "sky_arts": {"dataSources": {}},
+            "pick": {"dataSources": {}},
+            "w": {
                 "dataSources": {"bleb": {"id": "watch"}},
                 "hasPlus1": True},
-            "Gold": {
+            "gold": {
                 "dataSources": {"bleb": {"id": "uk_gold"}},
                 "hasPlus1": True},
-            "Dave": {
+            "dave": {
                 "dataSources": {"bleb": {"id": "dave"}},
                 "hasPlus1": True},
-            "Alibi": {"dataSources": {}, "hasPlus1": True},
-            "Comedy Central": {
+            "alibi": {"dataSources": {}, "hasPlus1": True},
+            "comedy_central": {
                 "dataSources": {"bleb": {"id": "paramount"}},
                 "hasPlus1": True},
-            "Comedy Central Extra": {
+            "comedy_central_extra": {
                 "dataSources": {"bleb": {"id": "paramount2"}}},
-            "MTV": {
+            "mtv": {
                 "dataSources": {"bleb": {"id": "mtv"}}},
             "syfy": {
                 "dataSources": {"bleb": {"id": "scifi"}},
                 "hasPlus1": True},
-            "Universal Channel": {"dataSources": {}, "hasPlus1": True},
-            "Challenge": {
+            "universal_channel": {"dataSources": {}, "hasPlus1": True},
+            "challenge": {
                 "dataSources": {"bleb": {"id": "challenge"}},
                 "hasPlus1": True},
-            "E4": {
+            "e4": {
                 "dataSources": {"bleb": {"id": "e4"}},
                 "hasPlus1": True},
-            "More4": {
+            "more4": {
                 "dataSources": {"bleb": {"id": "more4"}},
                 "hasPlus1": True},
-            "CBS Reality": {"dataSources": {}, "hasPlus1": True},
-            "Horror Channel": {"dataSources": {}, "hasPlus1": True},
+            "cbs_reality": {"dataSources": {}, "hasPlus1": True},
+            "horror": {"dataSources": {}, "hasPlus1": True},
             "5*": {
                 "dataSources": {"bleb": {"id": "fiver"}},
                 "hasPlus1": True},
-            "5 USA": {"dataSources": {}, "hasPlus1": True},
-            "5 Spike": {"dataSources": {}},
-            "E! Entertainment": {"dataSources": {}},
-            "FOX": {
+            "5usa": {"dataSources": {}, "hasPlus1": True},
+            "5select": {"dataSources": {}},
+            "5spike": {"dataSources": {}},
+            "paramount_network": {"dataSources": {}},
+            "e!": {"dataSources": {}},
+            "fox": {
                 "dataSources": {"bleb": {"id": "fx"}},
                 "hasPlus1": True},
-            "Made in Leeds": {"dataSources": {}},
-            "Real Lives": {"dataSources": {}, "hasPlus1": True},
-            "BBC ALBA": {"dataSources": {}},
-            "S4C": {
+            "made_in_leeds": {"dataSources": {}},
+            "real_lives": {"dataSources": {}, "hasPlus1": True},
+            "bbc_alba": {"dataSources": {}},
+            "s4c": {
                 "dataSources": {"bleb": {"id": "s4c"}}},
-            "TLC": {"dataSources": {}, "hasPlus1": True},
-            "DMAX": {"dataSources": {}, "hasPlus1": True},
-            "Quest": {"dataSources": {}, "hasPlus1": True},
-            "BET": {"dataSources": {}},
-            "True Entertainment": {"dataSources": {}},
-            "Drama": {"dataSources": {}},
-            "CBS Action": {"dataSources": {}},
-            "Sony TV": {"dataSources": {}},
-            "4Seven": {"dataSources": {}},
-            "CBS Drama": {"dataSources": {}},
-            "TruTV": {"dataSources": {}},
-            "Sky Cinema Premiere": {
+            "tlc": {"dataSources": {}, "hasPlus1": True},
+            "dmax": {"dataSources": {}, "hasPlus1": True},
+            "quest": {"dataSources": {}, "hasPlus1": True},
+            "bet": {"dataSources": {}},
+            "true_entertainment": {"dataSources": {}},
+            "yourtv": {"dataSources": {}},
+            "drama": {"dataSources": {}},
+            "cbs_action": {"dataSources": {}},
+            "sony_crime": {"dataSources": {}},
+            "4seven": {"dataSources": {}},
+            "cbs_drama": {"dataSources": {}},
+            "tru_tv": {"dataSources": {}},
+            "sky_cinema_premiere": {
                 "dataSources": {"bleb": {"id": "sky_movies_premiere"}},
                 "hasPlus1": True},
-            "Sky Cinema Hits": {
+            "sky_cinema_hits": {
                 "dataSources": {"bleb": {"id": "sky_movies_showcase"}}},
-            "Sky Cinema Greats": {
+            "sky_cinema_greats": {
                 "dataSources": {"bleb": {"id": "sky_movies_modern_greats"}}},
-            "Sky Cinema Disney": {},
-            "Sky Cinema Family": {
+            "sky_cinema_disney": {},
+            "sky_cinema_family": {
                 "dataSources": {"bleb": {"id": "sky_movies_family"}}},
-            "Sky Cinema Action": {
+            "sky_cinema_action": {
                 "dataSources": {"bleb": {"id": "sky_movies_action_thriller"}}},
-            "Sky Cinema Comedy": {
+            "sky_cinema_comedy": {
                 "dataSources": {"bleb": {"id": "sky_movies_comedy"}}},
-            "Sky Cinema Thriller": {
+            "sky_cinema_thriller": {
                 "dataSources": {"bleb": {"id": "sky_movies_crime_thriller"}}},
-            "Sky Cinema Drama": {
+            "sky_cinema_drama": {
                 "dataSources": {"bleb": {"id": "sky_movies_drama"}}},
-            "Sky Cinema Sci Fi & Horror": {
+            "sky_cinema_sci_fi_": {
                 "dataSources": {"bleb": {"id": "sky_movies_sci-fi_horror"}}},
-            "Sky Cinema Select": {
+            "sky_cinema_select": {
                 "dataSources": {"bleb": {"id": "sky_movies_indie"}}},
-            "TCM": {
+            "tcm": {
                 "dataSources": {"bleb": {"id": "tcm"}},
                 "hasPlus1": True},
-            "Movies 24": {"dataSources": {}, "hasPlus1": True},
-            "True Movies": {"dataSources": {}},
-            "Sony Movie Channel": {"dataSources": {}},
-            "Film4": {
+            "movies24": {"dataSources": {}, "hasPlus1": True},
+            "true_movies": {"dataSources": {}},
+            "sony_movie_channel": {"dataSources": {}},
+            "film4": {
                 "dataSources": {"bleb": {"id": "film_four"}},
                 "hasPlus1": True},
-            "Sky Sports News": {
+            "sky_sports_news": {
                 "dataSources": {"bleb": {"id": "sky_sports_news"}}},
-            "Sky Sports Mix": {"dataSources": {}},
-            "Sky Sports Main Event": {"dataSources": {}},
-            "Sky Sports Premier League": {"dataSources": {}},
-            "Sky Sports Football": {"dataSources": {}},
-            "Sky Sports Cricket": {"dataSources": {}},
-            "Sky Sports Golf": {"dataSources": {}},
-            "Sky Sports F1": {"dataSources": {}},
-            "Sky Sports Action": {"dataSources": {}},
-            "Sky Sports Arena": {"dataSources": {}},
-            "At The Races": {"dataSources": {}},
-            "BT Sport 1": {"dataSources": {}},
-            "BT Sport 2": {"dataSources": {}},
-            "BT Sport 3": {"dataSources": {}},
-            "BT Sport ESPN": {"dataSources": {}},
-            "Eurosport 1": {
+            "sky_sports_mix": {"dataSources": {}},
+            "sky_sports_main_event": {"dataSources": {}},
+            "sky_sports_premier_league": {"dataSources": {}},
+            "sky_sports_football": {"dataSources": {}},
+            "sky_sports_cricket": {"dataSources": {}},
+            "sky_sports_golf": {"dataSources": {}},
+            "sky_sports_f1": {"dataSources": {}},
+            "sky_sports_action": {"dataSources": {}},
+            "sky_sports_arena": {"dataSources": {}},
+            "at_the_races": {"dataSources": {}},
+            "bt_sport_1": {"dataSources": {}},
+            "bt_sport_2": {"dataSources": {}},
+            "bt_sport_3": {"dataSources": {}},
+            "bt_sport_espn": {"dataSources": {}},
+            "eurosport1": {
                 "dataSources": {"bleb": {"id": "british_eurosport"}}},
-            "Eurosport 2": {"dataSources": {}},
-            "Motorsport TV": {"dataSources": {}},
-            "FIA Formula E": {"dataSources": {}},
-            "BIKE": {"dataSources": {}},
-            "COPA90": {"dataSources": {}},
-            "Yesterday": {"dataSources": {}},
-            "Yesterday +1": {"dataSources": {}},
-            "Eden": {"dataSources": {}, "hasPlus1": True},
-            "Discovery Channel": {"dataSources": {}, "hasPlus1": True},
-            "Investigation Discovery": {"dataSources": {}, "hasPlus1": True},
-            "Animal Planet": {"dataSources": {}, "hasPlus1": True},
-            "Discovery Science": {"dataSources": {}, "hasPlus1": True},
-            "Discovery Turbo": {"dataSources": {}},
-            "Discovery History": {"dataSources": {}, "hasPlus1": True},
-            "Nat Geo Wild": {"dataSources": {}},
-            "National Geographic": {"dataSources": {}, "hasPlus1": True},
-            "Community Channel": {"dataSources": {}},
-            "History": {"dataSources": {}, "hasPlus1": True},
-            "H2": {"dataSources": {}},
-            "Lifetime": {"dataSources": {}},
-            "Crime and Investigation": {"dataSources": {}},
-            "PBS America": {"dataSources": {}},
-            "Forces TV": {},
-            "Good Food": {"dataSources": {}, "hasPlus1": True},
-            "Food Network": {"dataSources": {}},
-            "Home": {
+            "eurosport2": {"dataSources": {}},
+            "motorsport_tv": {"dataSources": {}},
+            "permier_sports": {"dataSources": {}},
+            "permier_sports2": {"dataSources": {}},
+            "free_sports": {"dataSources": {}},
+            "yesterday": {"dataSources": {}, "hasPlus1": True},
+            "eden": {"dataSources": {}, "hasPlus1": True},
+            "discovery_channel": {"dataSources": {}, "hasPlus1": True},
+            "investigation_discovery": {"dataSources": {}, "hasPlus1": True},
+            "animal_planet": {"dataSources": {}, "hasPlus1": True},
+            "discovery_science": {"dataSources": {}, "hasPlus1": True},
+            "discovery_turbo": {"dataSources": {}},
+            "discovery_history": {"dataSources": {}, "hasPlus1": True},
+            "nat_geo_wild": {"dataSources": {}},
+            "national_geographic": {"dataSources": {}, "hasPlus1": True},
+            "love_nature": {"dataSources": {}},
+            "community_channel": {"dataSources": {}},
+            "history": {"dataSources": {}, "hasPlus1": True},
+            "h2": {"dataSources": {}},
+            "lifetime": {"dataSources": {}},
+            "crime_and_investigation": {"dataSources": {}},
+            "pbs_america": {"dataSources": {}},
+            "forces_tv": {"dataSources": {}},
+            "good_food": {"dataSources": {}, "hasPlus1": True},
+            "food_network": {"dataSources": {}},
+            "home": {
                 "dataSources": {"bleb": {"id": "uktv_style"}},
                 "hasPlus1": True},
-            "Really": {"dataSources": {}},
-            "Discovery Home & Health": {"dataSources": {}},
-            "Discovery Home & Health +1": {},
-            "Discovery Shed": {"dataSources": {}},
-            "Ginx Esports TV": {"dataSources": {}},
-            "Travel Channel": {"dataSources": {}},
-            "CBBC": {
+            "really": {"dataSources": {}},
+            "discovery_home_and_health": {"dataSources": {}, "hasPlus": True},
+            "discovery_shed": {"dataSources": {}},
+            "ginx": {"dataSources": {}},
+            "travel_channel": {"dataSources": {}},
+            "cbbc": {
                 "dataSources": {"bleb": {"id": "cbbc"}}},
-            "Cbeebies": {
+            "cbeebies": {
                 "dataSources": {"bleb": {"id": "cbeebies"}}},
-            "Cartoon Network": {
+            "cartoon_network": {
                 "dataSources": {"bleb": {"id": "cartoon_network"}},
                 "hasPlus1": True},
-            "Cartoonito": {"dataSources": {}},
-            "Disney XD": {"dataSources": {}, "hasPlus1": True},
-            "Nickelodeon": {
+            "cartoonito": {"dataSources": {}},
+            "disney_xd": {"dataSources": {}, "hasPlus1": True},
+            "nickelodeon": {
                 "dataSources": {"bleb": {"id": "nickelodeon"}},
                 "hasPlus1": True},
-            "Nick Junior": {"dataSources": {}},
-            "Nick Junior Too": {"dataSources": {}},
-            "Nick Toons": {"dataSources": {}},
-            "Disney Channel": {
+            "nick_junior": {"dataSources": {}},
+            "nick_junior_too": {"dataSources": {}},
+            "nick_toons": {"dataSources": {}},
+            "disney_channel": {
                 "dataSources": {"bleb": {"id": "disney"}},
                 "hasPlus1": True},
-            "Disney Junior": {"dataSources": {}},
-            "Boomerang": {"dataSources": {}, "hasPlus1": True},
-            "CITV": {
+            "disney_junior": {"dataSources": {}},
+            "boomerang": {"dataSources": {}, "hasPlus1": True},
+            "citv": {
                 "dataSources": {"bleb": {"id": "citv"}}},
-            "Pop": {"dataSources": {}},
-            "Tiny Pop": {"dataSources": {}},
-            "MTV Music": {"dataSources": {}},
-            "MTV Live HD": {"dataSources": {}},
-            "MTV Hits": {"dataSources": {}},
-            "MTV Base": {"dataSources": {}},
-            "MTV Dance": {"dataSources": {}},
-            "MTV Rocks": {"dataSources": {}},
-            "VH1": {
+            "pop": {"dataSources": {}},
+            "tiny_pop": {"dataSources": {}},
+            "mtv_usic": {"dataSources": {}},
+            "mtv_live_hd": {"dataSources": {}},
+            "mtv_hits": {"dataSources": {}},
+            "mtv_base": {"dataSources": {}},
+            "mtv_dance": {"dataSources": {}},
+            "mtv_rocks": {"dataSources": {}},
+            "vh1": {
                 "dataSources": {"bleb": {"id": "vh1"}}},
-            "Viva": {"dataSources": {}},
-            "4 Music": {
+            "viva": {"dataSources": {}},
+            "4music": {
                 "dataSources": {"bleb": {"id": "4music"}}},
-            "The Box": {"dataSources": {}},
-            "Kiss": {"dataSources": {}},
-            "Box Hits": {"dataSources": {}},
-            "Box Upfront": {"dataSources": {}},
-            "Magic": {"dataSources": {}},
-            "Kerrang! TV": {"dataSources": {}},
-            "Vintage TV": {"dataSources": {}},
-            "Clubland": {"dataSources": {}},
-            "BBC News": {
+            "the_box": {"dataSources": {}},
+            "kiss": {"dataSources": {}},
+            "box_hits": {"dataSources": {}},
+            "box_upfront": {"dataSources": {}},
+            "magic": {"dataSources": {}},
+            "kerrang_tv": {"dataSources": {}},
+            "vintage_tv": {"dataSources": {}},
+            "clubland": {"dataSources": {}},
+            "bbc_news": {
                 "dataSources": {"bleb": {"id": "bbc_news24"}}},
-            "Sky News": {
+            "sky_news": {
                 "dataSources": {"bleb": {"id": "sky_news"}}},
-            "BBC Parliament": {
+            "bbc_parliament": {
                 "dataSources": {"bleb": {"id": "bbc_parliament"}}},
-            "CNN": {"dataSources": {}},
-            "Bloomberg": {
+            "cnn": {"dataSources": {}},
+            "bloomberg": {
                 "dataSources": {"bleb": {"id": "boomerang"}}},
-            "CNBC": {"dataSources": {}},
-            "Euronews": {"dataSources": {}},
-            "NDTV 24x7": {"dataSources": {}},
-            "BBC Radio 1": {"dataSources": {}},
-            "BBC Radio 1 Xtra": {"dataSources": {}},
-            "BBC Radio 2": {"dataSources": {}},
-            "BBC Radio 3": {"dataSources": {}},
-            "BBC Radio 4 FM": {"dataSources": {}},
-            "BBC Radio 4 Extra": {"dataSources": {}},
-            "BBC Radio 4 Long Wave": {"dataSources": {}},
-            "BBC Radio 5 Live": {"dataSources": {}},
-            "BBC Radio 5 Live Sports Extra": {"dataSources": {}},
-            "BBC Radio 6 Music": {"dataSources": {}},
-            "BBC World Service": {"dataSources": {}},
-            "Absolute Radio": {"dataSources": {}},
-            "Smooth Radio": {"dataSources": {}},
-            "Heart FM": {"dataSources": {}},
-            "LBC": {"dataSources": {}},
-            "Classic FM": {"dataSources": {}},
-            "Gold Radio": {"dataSources": {}},
-            "Planet Rock": {"dataSources": {}},
-            "Magic Radio": {"dataSources": {}},
-            "Absolute 80s": {"dataSources": {}},
-            "Absolute Classic Rock": {"dataSources": {}},
-            "Capital FM": {"dataSources": {}},
-            "Capital Xtra": {"dataSources": {}},
-            "Radio X": {"dataSources": {}},
-            "Kiss FM": {"dataSources": {}},
-            "talkSPORT": {"dataSources": {}}
-}
+            "cnbc": {"dataSources": {}},
+            "euronews": {"dataSources": {}},
+            "ndtv24x7": {"dataSources": {}},
+            "bbc_radio_1": {"dataSources": {}},
+            "bbc_radio_1 Xtra": {"dataSources": {}},
+            "bbc_radio_2": {"dataSources": {}},
+            "bbc_radio_3": {"dataSources": {}},
+            "bbc_radio_4_fm": {"dataSources": {}},
+            "bbc_radio_4_extra": {"dataSources": {}},
+            "bbc_radio_4_long_wave": {"dataSources": {}},
+            "bbc_radio_5_live": {"dataSources": {}},
+            "bbc_radio_5_live_sports_extra": {"dataSources": {}},
+            "bbc_radio_6_music": {"dataSources": {}},
+            "bbc_World_service": {"dataSources": {}},
+            "absolute_radio": {"dataSources": {}},
+            "smooth_radio": {"dataSources": {}},
+            "heart_fm": {"dataSources": {}},
+            "lbc": {"dataSources": {}},
+            "classic_fm": {"dataSources": {}},
+            "gold_radio": {"dataSources": {}},
+            "planet_rock": {"dataSources": {}},
+            "magic_radio": {"dataSources": {}},
+            "absolute80s": {"dataSources": {}},
+            "absolute_classic_rock": {"dataSources": {}},
+            "capital_fm": {"dataSources": {}},
+            "capital_xtra": {"dataSources": {}},
+            "radio_x": {"dataSources": {}},
+            "kiss_fm": {"dataSources": {}},
+            "talksport": {"dataSources": {}}
+            }
