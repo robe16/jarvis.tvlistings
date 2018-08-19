@@ -158,6 +158,7 @@ channels = {"bbc_one": {
             "nat_geo_wild": {"dataSources": {}},
             "national_geographic": {"dataSources": {}, "hasPlus1": True},
             "love_nature": {"dataSources": {}},
+            "horse_and_country": {"dataSources": {}},
             "community_channel": {"dataSources": {}},
             "history": {"dataSources": {}, "hasPlus1": True},
             "h2": {"dataSources": {}},
