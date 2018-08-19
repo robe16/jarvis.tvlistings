@@ -196,7 +196,9 @@ channels = {"bbc_one": {
                 "dataSources": {"bleb": {"id": "disney"}},
                 "hasPlus1": True},
             "disney_junior": {"dataSources": {}},
-            "boomerang": {"dataSources": {}, "hasPlus1": True},
+            "boomerang": {
+                "dataSources": {"bleb": {"id": "boomerang"}},
+                "hasPlus1": True},
             "citv": {
                 "dataSources": {"bleb": {"id": "citv"}}},
             "pop": {"dataSources": {}},
@@ -226,8 +228,7 @@ channels = {"bbc_one": {
             "bbc_parliament": {
                 "dataSources": {"bleb": {"id": "bbc_parliament"}}},
             "cnn": {"dataSources": {}},
-            "bloomberg": {
-                "dataSources": {"bleb": {"id": "boomerang"}}},
+            "bloomberg": {"dataSources": {}},
             "cnbc": {"dataSources": {}},
             "euronews": {"dataSources": {}},
             "ndtv24x7": {"dataSources": {}},
