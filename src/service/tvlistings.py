@@ -32,14 +32,21 @@ class TVlistings():
 
     def build_listing_dict(self):
         #
-        for chan_name in channels:
+        for chan_id in channels:
+            #
+            self._listings[chan_id] = {}
+            #
+            # real-time/non-plus1
             try:
-                self._listings[chan_name] = self._getlisting(chan_name)
+                self._listings[chan_id]['listings'] = self._getlisting(chan_id, 0)
             except Exception as e:
                 log_internal(logException,
-                             logDesc_retrieve_listing.format(channel=chan_name),
+                             logDesc_retrieve_listing.format(channel=chan_id),
                              description='-',
                              exception=e)
+            #
+            # plus1
+            self._listings[chan_id]['hasPlus1'] = get_channel_item_plus1(chan_id)
 
 
     # All channels
@@ -49,18 +56,18 @@ class TVlistings():
 
     # Specificied channel
 
-    def get_listings_channel(self, channame):
-        return self._listings[channame]
+    def get_listings_channel(self, chan_id):
+        return self._listings[chan_id]
 
     # General request code (checks if a listing source is available and then retrieves from relevant scripts)
 
-    def _getlisting(self, chan_name):
+    def _getlisting(self, chan_id, offset):
         #
-        listing_srcs = get_channel_item_listingsrc_list(chan_name)
+        listing_srcs = get_channel_item_listingsrc_list(chan_id)
         #
         if not listing_srcs:
             log_internal(logFail,
-                         logDesc_retrieve_listing_no_source.format(channel=chan_name),
+                         logDesc_retrieve_listing_no_source.format(channel=chan_id),
                          description='-')
             return {}
         #
@@ -68,17 +75,16 @@ class TVlistings():
             for src in listing_srcs:
                 try:
                     #
-                    id = get_channel_item_listingsrc_id(chan_name, src)
-                    offset = get_channel_item_listingsrc_offset(chan_name, src)
+                    id = get_channel_item_listingsrc_id(chan_id, src)
                     #
                     if src == 'bleb':
                         log_internal(logPass,
-                                     logDesc_retrieve_listing.format(channel=chan_name),
+                                     logDesc_retrieve_listing.format(channel=chan_id),
                                      description=src)
                         return data_source_bleb.get(id, offset)
                 except Exception as e:
                     log_internal(logException,
-                                 logDesc_retrieve_listing.format(channel=chan_name),
+                                 logDesc_retrieve_listing.format(channel=chan_id),
                                  description=src,
                                  exception=e)
         return {}
