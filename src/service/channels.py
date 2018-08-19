@@ -208,7 +208,7 @@ channels = {"bbc_one": {
             "mtv_rocks": {"dataSources": {}},
             "vh1": {
                 "dataSources": {"bleb": {"id": "vh1"}}},
-            "viva": {"dataSources": {}},
+            "mtv_omg": {"dataSources": {}},
             "4music": {
                 "dataSources": {"bleb": {"id": "4music"}}},
             "the_box": {"dataSources": {}},
